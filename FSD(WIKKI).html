@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scott Forstall</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color:rgb(135, 139, 137);
+            text-align: center;
+            padding-top: 40px;
+        }
+        img{
+            height: 390px;
+            margin-right: 20px;    
+            border-radius: 10px;
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            text-shadow: 2px 2px 4px #000;
+        }
+        p{
+            font-size: 20px;
+            color: #f9f4f4;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: justify;
+            text-indent: 2em;
+            background-color: rgba(84, 79, 79, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .butt{
+            background-color: #2f2baf;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://en.wikipedia.org/wiki/Scott_Forstall">
+        <img src="scott.jpg" alt="Scott">
+    </a>
+    <h1>SCOTT FORSTALL</h1>
+    <p>Scott Forstall is an American software engineer best known for leading the development of iOS at Apple Inc. He joined Apple in the late 1990s and played a key role in creating the user interface for Mac OS X and later the iPhone's operating system. Forstall was a close associate of Steve Jobs and was instrumental in the development of iOS's skeuomorphic design, which mimicked real-world textures and objects. He left Apple in 2012 after a major management restructuring. Since then, he has kept a relatively low profile, working as an advisor and producer on Broadway.</p>
+    <button class="butt" onclick="getback()">Home</button>
+    <script>
+        function getback() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

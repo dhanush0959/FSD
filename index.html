@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSD EXPERIMENTS</title>
+    <link rel="stylesheet" href="intro.css">
+</head>
+<body>
+    <header>FULL STACK EXPERIMENT</header>
+    <main class="content">
+        <div class="m1">
+            <h1>Wikipedia</hi>
+            <button onclick="openFile('FSD(WIKKI).html')" class="butt"> Show</button>   
+        </div>
+        <div class="m1">
+            <h1>Sports</h1>
+            <button onclick="openFile('FSD(SP).html')" class="butt"> Show</button>
+        </div>
+        <div class="m1">
+            <h1>Time Table</h1>
+            <button onclick="openFile('FSD(TT).html')" class="butt">Show</button>
+        </div>
+        <div class="m1">
+            <h1>Registration Form</h1>
+            <button onclick="openFile('FSD(RF).html')" class="butt"> Show</button>
+        </div>
+        <div class="m1">
+            <h1>Programing Languages</h1>
+            <button class="butt"> Show</button>
+        </div>
+    </main>
+    <div class="cursor" id="cursor"></div>
+    <script>
+        const cursor = document.getElementById("cursor");
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+        function openFile(fileName) {
+            window.open(fileName, '_blank');
+        }
+    </script>
+</body>
+</html>
